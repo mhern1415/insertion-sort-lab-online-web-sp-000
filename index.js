@@ -22,7 +22,7 @@ for (let i = 0; i < array.length; i++) {
   }
 }
 
-array.splice(index, 1)
+array.splice(minIndex, 1)
 return min
 
 }
