@@ -1,18 +1,14 @@
-function findMinAndRemove(array){
-
-let min = array[0]
-let index =  0
-
-for (let i = 0; i < array.length; i++) {
-  if (array[i] < min) {
-    array[i] = min
-    index = i
+function findMinAndRemove(array) {
+  let min = array[0];
+  let minIndex = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < min) {
+      min = array[i];
+      minIndex = i;
+    }
   }
-}
-
-array.splice(index, 1)
-return min
-
+  array.splice(minIndex, 1);
+  return min;
 }
 
 function selectionSort(array){
